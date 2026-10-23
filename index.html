@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tara Naturals | Handcrafted Natural Soaps & Botanical Oils</title>
+  <meta name="description" content="Small-batch, handcrafted natural soaps and cold-pressed botanical oils made with pure plant-based ingredients." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <span class="brand-leaf" aria-hidden="true">&#127807;</span>
+        <div>
+          <span class="brand-name">Tara Naturals</span>
+          <span class="brand-tagline">Pure Soaps &amp; Botanical Oils</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#catalog">Catalog</a>
+        <a href="#about">Our Promise</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Small-Batch &bull; 100% Plant-Based &bull; Handcrafted</p>
+        <h1>Nourish Your Skin with Pure Nature</h1>
+        <p class="hero-subtitle">
+          Artisanal cold-processed soaps and cold-pressed botanical oils crafted without synthetic fragrances, parabens, or harsh chemicals.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Browse Product Catalog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="catalog" class="catalog-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Product Catalog</h2>
+          <p>Explore our handcrafted soaps and nutrient-rich oils.</p>
+        </div>
+
+        <!-- Filters & Search -->
+        <div class="catalog-controls">
+          <div class="filter-buttons" role="group" aria-label="Product categories">
+            <button class="filter-btn active" data-category="all" type="button">All Products</button>
+            <button class="filter-btn" data-category="soap" type="button">Natural Soaps</button>
+            <button class="filter-btn" data-category="oil" type="button">Botanical Oils</button>
+          </div>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search by name or ingredient..."
+              aria-label="Search products"
+            />
+          </div>
+        </div>
+
+        <!-- Product Grid (Populated by script.js) -->
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Features / Promise Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Tara Naturals?</h2>
+          <p>Thoughtfully formulated for gentle, everyday skin and hair care.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>100% Natural Ingredients</h3>
+            <p>Made with pure plant oils, clays, herbs, and steam-distilled essential oils. Nothing artificial.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Cold-Processed &amp; Cold-Pressed</h3>
+            <p>Our traditional methods retain natural glycerin, vitamins, and antioxidants that nourish your skin.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Small-Batch Quality</h3>
+            <p>Every bar and bottle is crafted in small batches to ensure freshness and careful quality control.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Tara Naturals. Handcrafted with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

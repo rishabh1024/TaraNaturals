@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: tara-naturals-website
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
