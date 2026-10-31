@@ -1,132 +1,111 @@
 /**
  * Product Catalog Data
  * Edit this list to add, update, or remove your soaps and oils.
- * Set `image` to a file path (e.g. "images/lavender-soap.jpg") if you add product photos later.
+ * Fill in `price` and `size` when ready — they appear on the cards automatically.
  */
 const products = [
   {
-    id: "lavender-oat-soap",
-    name: "Lavender & Colloidal Oat Bar",
-    category: "soap",
-    categoryLabel: "Natural Soap",
-    price: "$8.00",
-    size: "4.5 oz (125g) Bar",
-    description: "A calming, creamy bar crafted for sensitive and dry skin. Gently exfoliates while soothing irritation.",
-    ingredients: "Saponified Olive, Coconut & Shea Oils, Colloidal Oatmeal, French Lavender Essential Oil",
-    icon: "🧼",
-    image: ""
+    id: "colourful-muse",
+    name: "Colourful Muse",
+    categoryLabel: "Melt & Pour Soap",
+    price: "",
+    size: "",
+    description:
+      "Gentle handcrafted melt and pour soap made with a creamy, nourishing goat milk soap base.",
+    ingredients: "Goat Milk Soap Base",
+    image: "assets/product_1.jpeg"
   },
   {
-    id: "turmeric-honey-soap",
-    name: "Turmeric & Raw Honey Glow Bar",
-    category: "soap",
-    categoryLabel: "Natural Soap",
-    price: "$8.50",
-    size: "4.5 oz (125g) Bar",
-    description: "Brightening cold-processed soap infused with organic turmeric root and raw wildflower honey.",
-    ingredients: "Saponified Olive & Castor Oils, Raw Honey, Organic Turmeric Root, Sweet Orange Oil",
-    icon: "🍯",
-    image: ""
+    id: "dewdrop",
+    name: "Dewdrop",
+    categoryLabel: "Melt & Pour Soap",
+    price: "",
+    size: "",
+    description:
+      "Hydrating melt and pour soap crafted with a glycerine soap base and sweet almond oil for soft, moisturized skin.",
+    ingredients: "Glycerine Soap Base, Almond Oil",
+    image: "assets/product_2.jpeg"
   },
   {
-    id: "neem-tea-tree-soap",
-    name: "Neem & Tea Tree Purifying Bar",
-    category: "soap",
-    categoryLabel: "Natural Soap",
-    price: "$8.50",
-    size: "4.5 oz (125g) Bar",
-    description: "Deeply cleansing herbal bar ideal for blemish-prone or combination skin.",
-    ingredients: "Cold-Pressed Neem Oil, Coconut Oil, French Green Clay, Tea Tree Essential Oil",
-    icon: "🌿",
-    image: ""
+    id: "rose-ubtan-soap",
+    name: "Rose Ubtan Soap",
+    categoryLabel: "Melt & Pour Soap",
+    price: "",
+    size: "",
+    description:
+      "Aromatic melt and pour soap infused with rose petals, sandalwood powder, and orange peel powder for a traditional ubtan experience.",
+    ingredients: "Rose Petals, Sandalwood Powder, Orange Peel Powder",
+    image: "assets/product_3.jpeg"
   },
   {
-    id: "charcoal-eucalyptus-soap",
-    name: "Activated Charcoal & Eucalyptus Soap",
-    category: "soap",
-    categoryLabel: "Natural Soap",
-    price: "$9.00",
-    size: "4.5 oz (125g) Bar",
-    description: "Draws out impurities and excess oil while leaving a crisp, refreshing botanical scent.",
-    ingredients: "Activated Bamboo Charcoal, Saponified Olive & Shea Butter, Eucalyptus Essential Oil",
-    icon: "🌱",
-    image: ""
+    id: "olive-serenity",
+    name: "Olive Serenity",
+    categoryLabel: "Cold Process Soap",
+    price: "",
+    size: "",
+    description:
+      "Nourishing cold process soap formulated with pure olive oil and coconut oil for a gentle, conditioning cleanse.",
+    ingredients: "Olive Oil, Coconut Oil",
+    image: "assets/product_4.jpeg"
   },
   {
-    id: "sweet-almond-oil",
-    name: "Cold-Pressed Sweet Almond Oil",
-    category: "oil",
+    id: "mocha-bliss",
+    name: "Mocha Bliss",
+    categoryLabel: "Cold Process Soap",
+    price: "",
+    size: "",
+    description:
+      "Rich cold process soap enriched with coffee, shea butter, and cocoa butter for a warm, indulgent skincare ritual.",
+    ingredients: "Coffee, Shea Butter, Cocoa Butter",
+    image: "assets/product_5.jpeg"
+  },
+  {
+    id: "body-oil",
+    name: "Body Oil",
     categoryLabel: "Botanical Oil",
-    price: "$14.00",
-    size: "100 ml Glass Bottle",
-    description: "Lightweight, vitamin E-rich body and face oil that absorbs quickly to soften and condition skin.",
-    ingredients: "100% Pure Cold-Pressed Prunus Amygdalus Dulcis (Sweet Almond) Oil",
-    icon: "💧",
-    image: ""
+    price: "",
+    size: "",
+    description:
+      "A lightweight blend of plant oils that softens and nourishes skin, finished with calming lavender.",
+    ingredients: "Jojoba Oil, Sweet Almond Oil, Sunflower Oil, Lavender Oil",
+    image: "assets/product_6.jpeg"
   },
   {
-    id: "rosemary-scalp-oil",
-    name: "Rosemary & Castor Hair Elixir",
-    category: "oil",
+    id: "hair-oil",
+    name: "Hair Oil",
     categoryLabel: "Botanical Oil",
-    price: "$18.00",
-    size: "100 ml Dropper Bottle",
-    description: "Nourishing herbal scalp and hair oil formulated to strengthen roots and add natural shine.",
-    ingredients: "Cold-Pressed Castor Oil, Golden Jojoba Oil, Amla Extract, Rosemary Essential Oil",
-    icon: "🌾",
-    image: ""
-  },
-  {
-    id: "kumkumadi-face-oil",
-    name: "Saffron & Rosehip Facial Oil",
-    category: "oil",
-    categoryLabel: "Botanical Oil",
-    price: "$22.00",
-    size: "30 ml Dropper Bottle",
-    description: "Restorative night oil packed with antioxidants for radiant, deeply hydrated skin.",
-    ingredients: "Cold-Pressed Rosehip Seed Oil, Golden Jojoba, Kashmiri Saffron Threads, Vitamin E",
-    icon: "🌸",
-    image: ""
-  },
-  {
-    id: "virgin-coconut-body-oil",
-    name: "Herb-Infused Virgin Coconut Oil",
-    category: "oil",
-    categoryLabel: "Botanical Oil",
-    price: "$15.00",
-    size: "150 ml Glass Bottle",
-    description: "Small-batch cold-pressed coconut oil slow-infused with calendula petals and chamomile.",
-    ingredients: "Unrefined Virgin Coconut Oil, Dried Calendula Blossoms, Roman Chamomile",
-    icon: "🥥",
-    image: ""
+    price: "",
+    size: "",
+    description:
+      "A nourishing herbal oil blend crafted to condition the scalp and strengthen hair from root to tip.",
+    ingredients:
+      "Coconut Oil, Sweet Almond Oil, Sesame Oil, Jojoba Oil, Rosemary Oil, Castor Oil",
+    image: "assets/product_6.jpeg"
   }
 ];
 
 const productGrid = document.getElementById("product-grid");
-const filterButtons = document.querySelectorAll(".filter-btn");
 const searchInput = document.getElementById("search-input");
 const yearSpan = document.getElementById("year");
 
-let activeCategory = "all";
 let searchQuery = "";
 
 function renderProducts() {
   const filtered = products.filter((product) => {
-    const matchesCategory = activeCategory === "all" || product.category === activeCategory;
     const query = searchQuery.trim().toLowerCase();
-    const matchesSearch =
+    return (
       !query ||
       product.name.toLowerCase().includes(query) ||
       product.description.toLowerCase().includes(query) ||
-      product.ingredients.toLowerCase().includes(query);
-
-    return matchesCategory && matchesSearch;
+      product.ingredients.toLowerCase().includes(query) ||
+      product.categoryLabel.toLowerCase().includes(query)
+    );
   });
 
   if (filtered.length === 0) {
     productGrid.innerHTML = `
       <div class="empty-state">
-        <p>No products found matching your filter. Try another search or category.</p>
+        <p>No products found matching your search. Try another keyword.</p>
       </div>
     `;
     return;
@@ -134,23 +113,30 @@ function renderProducts() {
 
   productGrid.innerHTML = filtered
     .map((product) => {
-      const visualClass = product.category === "soap" ? "soap-bg" : "oil-bg";
-      const visualContent = product.image
-        ? `<img src="${product.image}" alt="${product.name}" loading="lazy" />`
-        : `<span aria-hidden="true">${product.icon}</span>`;
+      const priceHtml = product.price
+        ? `<span class="product-price">${product.price}</span>`
+        : "";
+      const sizeHtml = product.size
+        ? `<p class="product-size">${product.size}</p>`
+        : "";
+      const visualClass = product.categoryLabel
+        .toLowerCase()
+        .includes("oil")
+        ? "oil-bg"
+        : "soap-bg";
 
       return `
         <article class="product-card">
           <div class="product-visual ${visualClass}">
             <span class="product-badge">${product.categoryLabel}</span>
-            ${visualContent}
+            <img src="${product.image}" alt="${product.name}" loading="lazy" />
           </div>
           <div class="product-body">
             <div class="product-header">
               <h3 class="product-title">${product.name}</h3>
-              <span class="product-price">${product.price}</span>
+              ${priceHtml}
             </div>
-            <p class="product-size">${product.size}</p>
+            ${sizeHtml}
             <p class="product-description">${product.description}</p>
             <p class="product-ingredients">
               <strong>Key Ingredients:</strong> ${product.ingredients}
@@ -161,15 +147,6 @@ function renderProducts() {
     })
     .join("");
 }
-
-filterButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    filterButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    activeCategory = btn.dataset.category;
-    renderProducts();
-  });
-});
 
 searchInput.addEventListener("input", (event) => {
   searchQuery = event.target.value;
